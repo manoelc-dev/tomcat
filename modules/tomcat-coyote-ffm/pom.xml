@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-parent</artifactId>
+    <version>10.1.54</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <artifactId>tomcat-coyote-ffm</artifactId>
+  <description>Apache Tomcat - Coyote FFM (Foreign Function and Memory, requires Java 22+)</description>
+  <properties>
+    <maven.compiler.release>22</maven.compiler.release>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-juli</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-util</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-coyote</artifactId>
+    </dependency>
+  </dependencies>
+</project>
